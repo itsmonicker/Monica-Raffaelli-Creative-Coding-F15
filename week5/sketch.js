@@ -10,8 +10,8 @@ function setup(){
 function draw(){
 
   background(50, 125, 125);
-  text((angle1 / -TWO_PI * -59)+15, 50, 450);
-  text((angle2 / -TWO_PI * 59)-45, 440, 450);
+  text((angle1 / -TWO_PI * 59), 50, 450);
+  text((angle2 / -TWO_PI * 59), 440, 450);
   fill(0);
   triangle(30, 240, 20, 250, 30, 260);
   triangle(470, 240, 480, 250, 470, 260);
@@ -20,6 +20,7 @@ function draw(){
   triangle(240, 470, 250, 480, 260, 470);
   translate(250, 250);
   
+  rotate(HALF_PI+PI);
   angle1 = (second() / 59.0) * TWO_PI;
   
   x = cos(angle1)* radius;
