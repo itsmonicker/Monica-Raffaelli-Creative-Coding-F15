@@ -12,5 +12,5 @@ function setup() {
 function draw() {
   background(0);  
     
-  animation(shark, 500, 150);
+  animation(shark, 250, 150);
 }
