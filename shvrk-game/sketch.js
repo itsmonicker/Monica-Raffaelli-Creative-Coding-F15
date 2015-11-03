@@ -2,7 +2,7 @@ var shark;
 
 function preload() {
 
-shark = loadAnimation("assets/shvrk-game1.jpg", "assets/shvrk-game2.jpg")
+shark = loadAnimation("assets/shvrk-game1.png", "assets/shvrk-game2.png")
 }
 
 function setup() {
