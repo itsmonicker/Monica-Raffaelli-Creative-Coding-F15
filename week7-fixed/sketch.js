@@ -20,7 +20,7 @@ function draw() {
   text("omg", 22, 65);
   text("omg", 22, 440);
   text("humidity", 155, 475);
-  text("temperature (F)", 345, 475);
+  text("temperature (F)", 335, 475);
   line(25, 50, 75, 50)
   fill (0, 60, 250, 100)
   var humidity = weather.main.humidity;
