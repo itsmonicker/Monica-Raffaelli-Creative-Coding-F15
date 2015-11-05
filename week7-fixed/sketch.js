@@ -1,6 +1,7 @@
+/* api key updated */
 var weather;
 function preload() {
-  var url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=bd82977b86bf27fb59a04b61b657fb6f';
+  var url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2de143494c0b295cca9337e1e96b00e0';
   weather = loadJSON(url);
   println(weather);
 }
