@@ -25,7 +25,7 @@ function setup() {
   bird.setCollider("circle", 0,0,0);
   bird.addImage(birdImg);
 
-  ground = createSprite(800, GROUND_Y+100); //image 800x200
+  ground = createSprite(800, GROUND_Y+500); //image 800x200
   ground.addImage(groundImg);
 
   pipes = new Group();
@@ -36,6 +36,11 @@ function setup() {
 }
 
 function draw() {
+  
+  textSize(32);
+  text("shvrk", 100, 100);
+  fill(0, 102, 153);
+  
 
   if(gameOver && keyWentDown("x"))
     newGame();
@@ -77,6 +82,7 @@ function draw() {
     for(var i = 0; i<pipes.length; i++)
       if(pipes[i].position.x < bird.position.x-width/2)
         pipes[i].remove();
+        
   }
 
   camera.position.x = bird.position.x + width/4;

@@ -3,8 +3,15 @@
 
 var paddleA, paddleB, ball, wallTop, wallBottom;
 var MAX_SPEED = 10;
+var img; image;
 
 function preload() {
+  img = loadImage("assets/shvrk-game2.png");
+}
+
+function setup() {
+  image(img, 0, 0);
+}
 
 paddleA = loadAnimation("assets/shvrk-game1.png", "assets/shvrk-game1.png", "assets/shvrk-game2.png", "assets/shvrk-game2.png");
 }
